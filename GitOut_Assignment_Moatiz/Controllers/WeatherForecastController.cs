@@ -29,5 +29,11 @@ namespace GitOut_Assignment_Moatiz.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("MyName", Name = "GetMyName")]
+        public ActionResult GetMyName()
+        {
+            return Ok(new { name = "Moatiz Sabahat" });
+        }
     }
 }
